@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: black;
+  color: aliceblue;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient{
+    @apply bg-gradient-to-b from-white via-purple-400 to-gray-300;
+  }
+  .gradient-title{
+    @apply gradient text-transparent bg-clip-text;
+  }
+}
